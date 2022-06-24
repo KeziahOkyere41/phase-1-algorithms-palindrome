@@ -1,9 +1,33 @@
+function reverse(word){
+  //' eat' => 'tea'
+  const reverseWord = word.split("");
+  const stringReverseArray = reverseWord.reverse();
+  const stringReverse = stringReverseArray.join("");
+  return stringReverse;
+}
+
 function isPalindrome(word) {
   // Write your algorithm here
+   const stringReverse = reverse(word)
+
+   if(word === stringReverse){
+    return true;
+   }
+   else{
+    return false
+   }
 }
 
 /* 
   Add your pseudocode here
+  If the word is the same as the reverse word, return true
+
+  reverse input string,
+
+  if the input string is the same as the reversed input
+  return true
+  else
+  return false
 */
 
 /*
